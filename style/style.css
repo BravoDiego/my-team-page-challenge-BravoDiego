@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,500&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 110px;
+}
+
+h1 {
+    font-family: 'PT serif';
+    font-weight: 700;
+    font-size: 36px;
+}
+
+#paragrapheader {
+    width: 440px;
+
+
+    font-family: 'Poppins';
+    font-size: 18px;
+    line-height: 27px;
+
+
+    margin-left: 210px;
+}
+
+strong {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+img{
+    width: 238px;
+}
+
+
+main {
+    display: grid;
+    grid-template: repeat(2, 1fr)/ repeat(5, 1fr);
+}
+
+.image {    
+    display: block;
+    writing-mode: vertical-lr;
+    text-transform: uppercase;
+
+
+    margin-bottom: 0px;
+    margin-top: 120px;
+
+    font-family: 'Pt serif';
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#A1, #A2, #A3 {
+    margin-top: 20px;
+}
+
+#A2, #B2 {
+    position: relative;
+    top: 100px;
+}
+
+.cellule {
+    margin-left: 75px;
+}
+
+h2 {
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+#A1 {
+    grid-column: 2;
+}
+
+#A2 {
+    grid-column: 3;
+}
+
+#A3 {
+    grid-column: 4;
+}
+
+#B1 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#B2 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#B3 {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+footer {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 500;
+
+
+    color: #BDBDBD;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    margin-top: 118px;
+    margin-bottom: 24px;
+}
+
+#lien {
+    text-decoration: underline;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 700;
+
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+
+
+
+
+@media(max-width: 376px) {
+    
+    header {
+        display: block;
+        margin-top: 0px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    #paragrapheader {
+        font-size: 14px;
+        margin-top: 38px;
+        margin-left: 0px;
+        width: 333px;
+    }
+
+    strong {
+        font-size: 18px
+    }
+
+    body {
+        height: 1000px;
+    }
+
+    #A2, #B2 {
+        position: relative;
+        top: 0px;
+    }
+    
+    .cellule{
+        margin-left: 5px;
+    }
+
+    main {
+        display: grid;
+        grid-template: repeat(3, 2fr)/repeat(2, 1fr);
+    }
+
+    #A1 {
+        grid-column: 1;
+        grid-row: 1;
+        margin-top: 45px;
+    }
+    #A2 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    #A3 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    #B1 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    #B2 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    #B3 {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    #A2, #B1, #B3 {
+        position: relative;
+        top: 100px;
+    }
+
+    img {
+        width: 125px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    h2 {
+        font-size: 14px;
+        margin-bottom: 64px;
+    }
+
+    .image {
+        margin-top: 0px;
+    }
+
+    footer {
+        font-size: 10px;      
+        margin-bottom: 40px;
+    }
+
+    #lien {
+        font-size: 10px;
+        margin: 0px;
+    }
+}

@@ -37,7 +37,9 @@ img{
 
 main {
     display: grid;
-    grid-template: repeat(2, 1fr)/ repeat(5, 1fr);
+    grid-template: repeat(2, 1fr)/ repeat(3, 1fr);
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 .image {    
@@ -75,29 +77,29 @@ h2 {
 }
 
 #A1 {
-    grid-column: 2;
+    grid-column: 1;
 }
 
 #A2 {
-    grid-column: 3;
+    grid-column: 2;
 }
 
 #A3 {
-    grid-column: 4;
+    grid-column: 3;
 }
 
 #B1 {
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 2;
 }
 
 #B2 {
-    grid-column: 3;
+    grid-column: 2;
     grid-row: 2;
 }
 
 #B3 {
-    grid-column: 4;
+    grid-column: 3;
     grid-row: 2;
 }
 
@@ -228,5 +230,91 @@ footer {
     #lien {
         font-size: 10px;
         margin: 0px;
+    }
+}
+
+
+
+
+
+@media (max-width: 500px) {
+    #A2, #B2 {
+        position: relative;
+        top: 0px;
+    }
+    
+    main {
+        display: grid;
+        grid-template: 20px repeat(3, 1fr) 20px/repeat(4, 1fr);
+        margin-left: 0px;
+        margin-right: 0px;
+        justify-content: center;
+    }
+
+    img {
+        width: 200px;
+    }
+
+    h1 {
+        margin-left: 20px;
+    }
+
+    #paragrapheader {
+        margin-left: 20px;
+    }
+
+    #A1, #A2, #A3, #B1, #B2, #B3 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    body  {
+        margin: 0px;
+    }
+
+    header {
+        display: block;
+    }
+
+    
+    #A1 {
+        grid-column: 2;
+        grid-row: 2;
+        margin-top: 0px;
+    }
+    #A2 {
+        grid-column: 3;
+        grid-row: 2;
+        margin-top: 100px;
+    }
+    #A3 {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    #B1 {
+        grid-column: 3;
+        grid-row: 3;
+    }
+    #B2 {
+        grid-column: 2;
+        grid-row: 4;
+    }
+    #B3 {
+        grid-column: 3;
+        grid-row: 4;
+    }
+
+    #A2, #B1, #B3 {
+        position: relative;
+        bottom: -100px;
+    }
+
+    
+
+    .cellule{
+        margin-left: 20px;
+        margin-bottom: 0px;
     }
 }

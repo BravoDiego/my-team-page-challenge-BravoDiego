@@ -245,10 +245,7 @@ footer {
 
 
 @media (max-width: 500px) {
-    #A2, #B2 {
-        position: relative;
-        top: 0px;
-    }
+
     
     main {
         display: grid;
@@ -271,10 +268,12 @@ footer {
     }
 
     #A1, #A2, #A3, #B1, #B2, #B3 {
-        margin-top: 0px;
         margin-bottom: 0px;
         margin-left: 0px;
         margin-right: 0px;
+        margin-top: -100px;
+        justify-content: center;
+        align-items: center;
     }
 
     body  {
@@ -294,29 +293,36 @@ footer {
     #A2 {
         grid-column: 3;
         grid-row: 1;
-        margin-top: 100px;
+        margin-top: -50px;
     }
     #A3 {
         grid-column: 2;
         grid-row: 2;
+        margin-top: -50px;
+        margin-bottom: 0px;
     }
     #B1 {
         grid-column: 3;
         grid-row: 2;
+        margin-top: -100px;
     }
     #B2 {
         grid-column: 2;
         grid-row: 3;
+        margin-top: -200px;        
     }
     #B3 {
         grid-column: 3;
         grid-row: 3;
+        margin-top: -150px;  
     }
 
     #A2, #B1, #B3 {
         position: relative;
         bottom: -100px;
     }
+
+   
 
     img {
         width: 125px

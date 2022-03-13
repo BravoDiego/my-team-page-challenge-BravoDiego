@@ -231,13 +231,17 @@ footer {
         font-size: 10px;
         margin: 0px;
     }
+    
+    #A1, #A3, #B2 {
+        margin-left: 20px
+    }
 }
 
 
 
 
 
-/*@media (max-width: 500px) {
+@media (max-width: 500px) {
     #A2, #B2 {
         position: relative;
         top: 0px;
@@ -316,5 +320,9 @@ footer {
     .cellule{
         margin-left: 20px;
         margin-bottom: 0px;
+        
+        #A1, #A3, #B2 {
+        margin-left: 20px
     }
-}*/
+    }
+}
